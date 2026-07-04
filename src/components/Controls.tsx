@@ -131,15 +131,6 @@ export function Controls({ activePalette }: { activePalette?: Palette }) {
       </div>
 
       <div className="ctl-row checks">
-        <label className="chip-check" title="每格取所有像素的加权平均色——平滑、贴近原图">
-          <input
-            type="radio"
-            name="cellSampling"
-            checked={options.cellSampling === 'blend'}
-            onChange={() => set({ cellSampling: 'blend' })}
-          />
-          融混取色
-        </label>
         <label className="chip-check" title="每格取出现次数最多的那个颜色——颜色更扁平、更干净，适合卡通风格">
           <input
             type="radio"
@@ -148,6 +139,15 @@ export function Controls({ activePalette }: { activePalette?: Palette }) {
             onChange={() => set({ cellSampling: 'extract' })}
           />
           主色提取
+        </label>
+        <label className="chip-check" title="每格取所有像素的加权平均色——平滑、贴近原图">
+          <input
+            type="radio"
+            name="cellSampling"
+            checked={options.cellSampling === 'blend'}
+            onChange={() => set({ cellSampling: 'blend' })}
+          />
+          融混取色
         </label>
       </div>
 

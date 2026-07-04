@@ -27,10 +27,10 @@ export const DEFAULT_OPTIONS: PipelineOptions = {
   quantize: 'direct',
   colorCount: 16,
   dither: 'none',
-  cellSampling: 'blend',
+  cellSampling: 'extract',
   mergeThreshold: 12,
-  removeIsolated: true,
-  mergeSmallRegions: true,
+  removeIsolated: false,
+  mergeSmallRegions: false,
   removeBackground: false,
 };
 
