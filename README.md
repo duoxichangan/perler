@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  🔗 <a href="https://jxufe-acm.cn/perler/"><strong>在线使用</strong></a>
+  🔗 <a href="https://jxufe-acm.cn/share/perler/"><strong>在线使用</strong></a>
 </p>
 
 ---
@@ -54,7 +54,7 @@ npm run preview
 
 ## 📦 部署
 
-部署在 [jxufe-acm.cn/perler/](https://jxufe-acm.cn/perler/)
+部署在 [jxufe-acm.cn/share/perler/](https://jxufe-acm.cn/share/perler/)
 
 构建后 `dist/` 目录即为静态文件，部署到任意静态服务器即可。如果部署在子路径（如 `/perler/`），需在 `vite.config.ts` 中配置 `base: '/perler/'`。
 
